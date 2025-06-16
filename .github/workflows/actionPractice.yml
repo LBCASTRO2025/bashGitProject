@@ -52,7 +52,7 @@ jobs:
   github_info:
     runs-on: ubuntu-latest
     steps:
-       - env:
+      - env:
           GITHUB_CONTEXT: ${{ toJson(github) }}
           run: |
             echo Triggered Event: ${{ github.event_name }}
