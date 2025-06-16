@@ -52,8 +52,8 @@ jobs:
   github_info:
     runs-on: ubuntu-latest
     steps:
-      - env:
-          GITHUB_CONTEXT: ${{ toJson(github) }}
+        - env:
+            GITHUB_CONTEXT: ${{ toJson(github) }}
           run: |
             echo Triggered Event: ${{ github.event_name }}
             echo Current Repository: ${{ github.repository }}
